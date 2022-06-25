@@ -41,5 +41,8 @@
   "files": [
     "profile/*",
     "patch.js"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
