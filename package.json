@@ -1,0 +1,41 @@
+{
+  "name": "@lotusdevshack/eslint-config",
+  "version": "0.1.0",
+  "description": "Personal ESLint Configs",
+  "main": "profile/node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayuhito/eslint-config.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Ayuhito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayuhito/eslint-config/issues"
+  },
+  "homepage": "https://github.com/ayuhito/eslint-config#readme",
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.3",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-vitest": "^0.0.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "np": "^7.6.2",
+    "typescript": "^4.7.4"
+  }
+}
