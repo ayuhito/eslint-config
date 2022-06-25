@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Personal ESLint Configs",
   "main": "profile/node.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ayuhito/eslint-config.git"
