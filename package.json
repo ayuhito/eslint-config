@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Personal ESLint Configs",
   "main": "profile/node.js",
+  "scripts": {
+    "publish": "np --yolo"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ayuhito/eslint-config.git"
