@@ -22,6 +22,17 @@ module.exports = {
   "no-console": "warn",
   // Useful but too restrictive on props
   "no-param-reassign": ["error", { props: false }],
+  // Too restrictive for type errors that are due to other library authors
+  "@typescript-eslint/ban-ts-comment": [
+    "error",
+    {
+      "ts-expect-error": "allow-with-description",
+      "ts-ignore": "allow-with-description",
+      "ts-nocheck": "allow-with-description",
+      "ts-check": "allow-with-description",
+      minimumDescriptionLength: 5,
+    },
+  ],
   // We might want to import from devDeps if we're bundling them with rollup
   "import/no-extraneous-dependencies": "off",
   // Common abbreviations are known and readable
