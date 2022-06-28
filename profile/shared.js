@@ -26,6 +26,8 @@ module.exports = {
   "import/no-extraneous-dependencies": "off",
   // Common abbreviations are known and readable
   "unicorn/prevent-abbreviations": "off",
+  // Default forces export from even if value is used elsewhere
+  "unicorn/prefer-export-from": ["error", { ignoreUsedVariables: true }],
   // Force ESM
   "unicorn/prefer-module": "error",
   // Auto sort imports
