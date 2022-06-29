@@ -1,4 +1,17 @@
 module.exports = {
+  // AirBnb defaults to 100
+  "max-len": [
+    "error",
+    80,
+    2,
+    {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: false,
+      ignoreTemplateLiterals: false,
+    },
+  ],
   "no-restricted-syntax": [
     // Remove for..of restriction from Airbnb because its extremely useful - https://github.com/airbnb/javascript/issues/1271
     "error",
