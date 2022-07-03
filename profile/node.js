@@ -2,7 +2,7 @@ const buildRules = require("./build");
 
 const node = {
   root: true,
-  ignorePatterns: ["*.d.ts", ".eslintrc.js"],
+  ignorePatterns: ["*.d.ts", ".eslintrc.js", ".eslintrc.cjs"],
   env: {
     es2020: true,
     node: true,
@@ -12,7 +12,7 @@ const node = {
   },
   overrides: [
     {
-      files: ["*.js", "*.jsx"],
+      files: ["*.js", "*.jsx", "*.cjs", "*.mjs"],
       plugins: ["promise", "unicorn", "simple-import-sort", "import"],
       extends: [
         "eslint:recommended",
@@ -26,7 +26,7 @@ const node = {
       },
     },
     {
-      files: ["src/**/*.ts", "src/**/*.tsx"],
+      files: ["src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts", "tests/**/*.tsx"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
         sourceType: "module",
@@ -38,6 +38,7 @@ const node = {
         "@typescript-eslint",
         "promise",
         "unicorn",
+        "vitest",
         "simple-import-sort",
         "import",
       ],
@@ -67,33 +68,6 @@ const node = {
           "error",
           { functions: false, classes: true, variables: true, typedefs: true },
         ],
-      },
-    },
-    {
-      // A more relaxed set of rules for unit tests
-      files: ["tests/**/*.ts", "tests/**/*.tsx"],
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        sourceType: "module",
-        allowAutomaticSingleRunInference: true,
-        warnOnUnsupportedTypeScriptVersion: false,
-        project: "./tsconfig.json",
-      },
-      plugins: [
-        "@typescript-eslint",
-        "promise",
-        "simple-import-sort",
-        "import",
-        "vitest",
-      ],
-      extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:promise/recommended",
-        "prettier",
-      ],
-      rules: {
-        // Just shared rules
       },
     },
     {
