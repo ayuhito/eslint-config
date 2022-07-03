@@ -1,5 +1,5 @@
 {
-  "name": "@lotusdevshack/eslint-config",
+  "name": "@ayuhito/eslint-config",
   "version": "0.1.7",
   "description": "Personal ESLint Configs",
   "main": "profile/node.js",
