@@ -22,6 +22,16 @@ module.exports = {
   "no-console": "warn",
   // Useful but too restrictive on props
   "no-param-reassign": ["error", { props: false }],
+  // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
+  "no-prototype-builtins": "off",
+  // Default exports affects readability
+  "import/prefer-default-export": "off",
+  "import/no-default-export": "error",
+  // Use function hoisting to improve code readability
+  "no-use-before-define": [
+    "error",
+    { functions: false, classes: true, variables: true },
+  ],
   // Too restrictive for type errors that are due to other library authors
   "@typescript-eslint/ban-ts-comment": [
     "error",
