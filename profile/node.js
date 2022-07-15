@@ -26,7 +26,7 @@ const node = {
       },
     },
     {
-      files: ["src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts", "tests/**/*.tsx"],
+      files: ["*.ts", "*.tsx"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
         sourceType: "module",
@@ -62,7 +62,7 @@ const node = {
     },
     {
       // Remove unicorn rules and add Vitest rules
-      files: ["tests/**/*.ts", "tests/**/*.tsx"],
+      files: ["*.test.ts", "*.test.tsx"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
         sourceType: "module",
