@@ -1,11 +1,8 @@
 {
   "name": "@ayuhito/eslint-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Personal ESLint Configs",
   "main": "profile/node.js",
-  "scripts": {
-    "publish": "npm publish"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ayuhito/eslint-config.git"
@@ -13,6 +10,10 @@
   "keywords": [
     "eslint"
   ],
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier . --write"
+  },
   "author": "Ayuhito",
   "license": "MIT",
   "bugs": {
@@ -40,7 +41,7 @@
   },
   "devDependencies": {
     "eslint": "^8.19.0",
-    "np": "^7.6.2",
+    "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   },
   "files": [

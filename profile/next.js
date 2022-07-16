@@ -144,7 +144,8 @@ const next = {
     },
     {
       files: ["*.mdx"],
-      extends: "plugin:mdx/recommended", // ESLint Parser/Plugin for MDX
+      extends: ["plugin:mdx/recommended"], // ESLint Parser/Plugin for MDX
+      rules: {},
     },
   ],
 };
