@@ -2,7 +2,12 @@ const buildRules = require("./build");
 
 const node = {
   root: true,
-  ignorePatterns: ["*.d.ts", ".eslintrc.js", ".eslintrc.cjs", "vitest.config.ts"],
+  ignorePatterns: [
+    "*.d.ts",
+    ".eslintrc.js",
+    ".eslintrc.cjs",
+    "vitest.config.ts",
+  ],
   env: {
     es2020: true,
     node: true,

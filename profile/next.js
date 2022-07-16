@@ -2,15 +2,19 @@ const buildRules = require("./build");
 
 const next = {
   root: true,
-  ignorePatterns: ["*.d.ts", ".eslintrc.js", ".eslintrc.cjs", "vitest.config.ts"],
+  ignorePatterns: [
+    "*.d.ts",
+    ".eslintrc.js",
+    ".eslintrc.cjs",
+    "vitest.config.ts",
+  ],
   env: {
     browser: true, // Enables browser globals like window and document
-    amd: true, // Enables require() and define() as global variables as per the amd spec.
     node: true, // Enables Node.js global variables and Node.js scoping.
   },
   parserOptions: {
-      ecmaVersion: 2020,
-      ecmaFeatures: {
+    ecmaVersion: 2020,
+    ecmaFeatures: {
       jsx: true, // Enable JSX since we're using React
     },
   },
@@ -89,17 +93,17 @@ const next = {
         "airbnb-typescript",
         "airbnb/hooks",
         "plugin:promise/recommended",
-        "next",
-        "next/core-web-vitals",
+        "plugin:@next/next/recommended",
+        "plugin:@next/next/core-web-vitals",
         "prettier",
       ],
       rules: {
-        // Allow most functions to rely on type inference. 
+        // Allow most functions to rely on type inference.
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-use-before-define": [
           "error",
           { functions: false, classes: true, variables: true, typedefs: true },
-          ],
+        ],
         "@typescript-eslint/explicit-module-boundary-types": "off",
       },
     },
