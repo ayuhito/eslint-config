@@ -18,6 +18,9 @@ module.exports = {
         "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
     },
   ],
+  // Formatting
+  semi: ["error", "always"],
+  quotes: ["error", "single", { avoidEscape: true }],
   // Use loggers
   "no-console": "warn",
   // Useful but too restrictive on props

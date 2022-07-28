@@ -31,7 +31,7 @@ const node = {
       },
     },
     {
-      files: ["*.ts", "*.tsx"],
+      files: ["**/*.ts?(x)"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
         sourceType: "module",
@@ -43,7 +43,6 @@ const node = {
         "@typescript-eslint",
         "promise",
         "unicorn",
-        "vitest",
         "simple-import-sort",
         "import",
       ],
@@ -67,7 +66,7 @@ const node = {
     },
     {
       // Remove unicorn rules and add Vitest rules
-      files: ["*.test.ts", "*.test.tsx"],
+      files: ["**/*.test.ts?(x)"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
         sourceType: "module",
