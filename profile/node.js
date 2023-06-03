@@ -7,7 +7,7 @@ const overrides = require('./shared/overrides');
  * @see https://www.npmjs.com/package/@rushstack/eslint-patch
  * @remark This can be removed when flat configs are stable
  */
-// require('@rushstack/eslint-patch/modern-module-resolution');
+require('@rushstack/eslint-patch/modern-module-resolution');
 
 const node = {
 	...base,
