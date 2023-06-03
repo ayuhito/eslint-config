@@ -48,6 +48,23 @@ module.exports = {
 			minimumDescriptionLength: 5,
 		},
 	],
+	// Too restrictive when typescript doesn't have enough context
+	'@typescript-eslint/strict-boolean-expressions': [
+		'error',
+		{
+			allowNullableBoolean: true,
+			allowNullableString: true,
+			allowNullableNumber: true,
+			allowAny: true,
+		},
+	],
+	// Breaks when using p-queue which uses an IIFE style
+	'@typescript-eslint/no-floating-promises': [
+		'error',
+		{
+			ignoreIIFE: true,
+		},
+	],
 	// We might want to import from devDeps if we're bundling them with rollup
 	'import/no-extraneous-dependencies': 'off',
 	// Common abbreviations are known and readable
