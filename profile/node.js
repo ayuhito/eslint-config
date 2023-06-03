@@ -1,6 +1,7 @@
+const { defineConfig } = require('eslint-define-config');
 const buildRules = require('./build');
 
-const node = {
+const node = defineConfig({
   root: true,
   ignorePatterns: [
     '*.d.ts',
@@ -104,6 +105,6 @@ const node = {
       rules: {},
     },
   ],
-};
+});
 
 module.exports = buildRules(node);

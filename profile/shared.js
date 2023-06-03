@@ -1,4 +1,6 @@
-module.exports = {
+const { defineConfig } = require('eslint-define-config');
+
+module.exports = defineConfig({
   'no-restricted-syntax': [
     // Remove for..of restriction from Airbnb because its extremely useful - https://github.com/airbnb/javascript/issues/1271
     'error',
@@ -24,7 +26,9 @@ module.exports = {
   // Use loggers
   'no-console': 'warn',
   // Useful but too restrictive on props
-  'no-param-reassign': ['error', { props: false }],
+  'no-param-reassign': [ 'error', { props: false } ],
+  // Sometimes error is too restrictive even if good practice
+  'no-await-in-loop': 'warn',
   // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
   'no-prototype-builtins': 'off',
   // Default exports affects readability
@@ -60,4 +64,4 @@ module.exports = {
   'import/first': 'error',
   'import/newline-after-import': 'error',
   'import/no-duplicates': 'error',
-};
+});
