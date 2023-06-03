@@ -1,6 +1,6 @@
 {
 	"name": "@ayuhito/eslint-config",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"description": "Personal ESLint Configs",
 	"main": "profile/node.js",
 	"repository": {
@@ -26,6 +26,7 @@
 		"@typescript-eslint/parser": "^5.59.8",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-config-standard": "^17.1.0",
+		"eslint-config-standard-with-typescript": "^35.0.0",
 		"eslint-import-resolver-node": "^0.3.7",
 		"eslint-import-resolver-typescript": "^3.5.5",
 		"eslint-plugin-import": "^2.27.5",
