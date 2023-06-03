@@ -65,6 +65,8 @@ module.exports = {
 			ignoreIIFE: true,
 		},
 	],
+	// Sometimes skippable if we're using a type assertion
+	'@typescript-eslint/no-non-null-assertion': 'warn',
 	// We might want to import from devDeps if we're bundling them with rollup
 	'import/no-extraneous-dependencies': 'off',
 	// Common abbreviations are known and readable
