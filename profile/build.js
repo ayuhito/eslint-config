@@ -1,4 +1,4 @@
-const shared = require("./shared");
+const shared = require('./shared');
 
 // If we ever end up with multiple profiles, add a new configuration into profiles
 const buildRules = (profile) => {
