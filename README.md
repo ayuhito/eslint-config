@@ -1,17 +1,11 @@
 # eslint-config
 
-Personal ESLint Configs
-
-Profiles:
-
-- node
+Personal ESLint Config for Node.js and TypeScript.
 
 ```js
 // .eslintrc.cjs
-require("@ayuhito/eslint-config/patch");
-
 module.exports = {
-  extends: ["@ayuhito/eslint-config/profile/node"],
+  extends: ["@ayuhito/eslint-config"],
   parserOptions: { tsconfigRootDir: __dirname },
 };
 ```
@@ -20,10 +14,8 @@ You can remove ESM restrictions by using the following config:
 
 ```js
 // .eslintrc.cjs
-require("@ayuhito/eslint-config/patch");
-
 module.exports = {
-  extends: ["@ayuhito/eslint-config/profile/node"],
+  extends: ["@ayuhito/eslint-config"],
   parserOptions: { tsconfigRootDir: __dirname },
   rules: {
     "unicorn/prefer-module": "off",
