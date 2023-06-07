@@ -57,6 +57,7 @@ const node = {
 				sourceType: 'module',
 				allowAutomaticSingleRunInference: true,
 				warnOnUnsupportedTypeScriptVersion: false,
+				tsconfigRootDir: __dirname,
 				project: './tsconfig.json',
 			},
 			plugins: ['simple-import-sort', 'import', 'vitest'],
