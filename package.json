@@ -1,6 +1,6 @@
 {
 	"name": "@ayuhito/eslint-config",
-	"version": "0.3.11",
+	"version": "0.4.0",
 	"description": "Personal ESLint Configs",
 	"main": "profile/node.js",
 	"repository": {
@@ -30,15 +30,12 @@
 		"eslint-import-resolver-node": "^0.3.7",
 		"eslint-import-resolver-typescript": "^3.5.5",
 		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-jsonc": "^2.8.0",
 		"eslint-plugin-n": "^15.7.0",
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-simple-import-sort": "^10.0.0",
-		"eslint-plugin-toml": "^0.5.0",
 		"eslint-plugin-unicorn": "^47.0.0",
 		"eslint-plugin-vitest": "^0.2.5",
-		"eslint-plugin-vitest-globals": "^1.3.1",
-		"eslint-plugin-yml": "^1.7.0"
+		"eslint-plugin-vitest-globals": "^1.3.1"
 	},
 	"devDependencies": {
 		"eslint": "8.42.0",

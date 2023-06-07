@@ -8,9 +8,6 @@ const buildRules = (profile) => {
 		Object.assign(override.rules, shared);
 	}
 
-	// Add overrides
-	rules.overrides.push(...overrides);
-
 	return rules;
 };
 
