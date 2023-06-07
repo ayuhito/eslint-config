@@ -27,8 +27,7 @@ const node = {
 				sourceType: 'module',
 				allowAutomaticSingleRunInference: true,
 				warnOnUnsupportedTypeScriptVersion: false,
-				tsconfigRootDir: __dirname,
-				project: './tsconfig.json',
+				project: true,
 			},
 			plugins: ['simple-import-sort', 'import'],
 			extends: [
@@ -57,8 +56,7 @@ const node = {
 				sourceType: 'module',
 				allowAutomaticSingleRunInference: true,
 				warnOnUnsupportedTypeScriptVersion: false,
-				tsconfigRootDir: __dirname,
-				project: './tsconfig.json',
+				project: true,
 			},
 			plugins: ['simple-import-sort', 'import', 'vitest'],
 			extends: [
