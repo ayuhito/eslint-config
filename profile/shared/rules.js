@@ -26,7 +26,7 @@ module.exports = {
 	// Useful but too restrictive on props
 	'no-param-reassign': ['error', { props: false }],
 	// Sometimes error is too restrictive even if good practice
-	'no-await-in-loop': 'warn',
+	'no-await-in-loop': 'off',
 	// Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'off',
 	// Default exports affects readability
@@ -57,6 +57,8 @@ module.exports = {
 			ignoreIIFE: true,
 		},
 	],
+	// We should use alternative data structures, but it can be useful sometimes
+	'@typescript-eslint/no-dynamic-delete': 'warn',
 	// Sometimes skippable if we're using a type assertion
 	'@typescript-eslint/no-non-null-assertion': 'warn',
 	// We might want to import from devDeps if we're bundling them with rollup
