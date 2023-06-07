@@ -1,4 +1,3 @@
-const overrides = require('./shared/overrides');
 const shared = require('./shared/rules');
 
 // If we ever end up with multiple profiles, add a new configuration into profiles
