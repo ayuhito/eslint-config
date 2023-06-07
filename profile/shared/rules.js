@@ -49,15 +49,7 @@ module.exports = {
 		},
 	],
 	// Too restrictive when typescript doesn't have enough context
-	'@typescript-eslint/strict-boolean-expressions': [
-		'error',
-		{
-			allowNullableBoolean: true,
-			allowNullableString: true,
-			allowNullableNumber: true,
-			allowAny: true,
-		},
-	],
+	'@typescript-eslint/strict-boolean-expressions': 'off',
 	// Breaks when using p-queue which uses an IIFE style
 	'@typescript-eslint/no-floating-promises': [
 		'error',
