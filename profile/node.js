@@ -1,6 +1,5 @@
 const buildRules = require('./build');
 const base = require('./shared/base');
-const overrides = require('./shared/overrides');
 
 /**
  * @see https://github.com/eslint/eslint/issues/3458
@@ -73,7 +72,6 @@ const node = {
 				],
 			},
 		},
-		...overrides,
 	],
 };
 
