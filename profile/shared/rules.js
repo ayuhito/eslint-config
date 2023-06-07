@@ -50,13 +50,8 @@ module.exports = {
 	],
 	// Too restrictive when typescript doesn't have enough context
 	'@typescript-eslint/strict-boolean-expressions': 'off',
-	// Breaks when using p-queue which uses an IIFE style
-	'@typescript-eslint/no-floating-promises': [
-		'error',
-		{
-			ignoreIIFE: true,
-		},
-	],
+	// Breaks parseroptions config
+	'@typescript-eslint/no-floating-promises': 'off',
 	// We should use alternative data structures, but it can be useful sometimes
 	'@typescript-eslint/no-dynamic-delete': 'warn',
 	// Sometimes skippable if we're using a type assertion
