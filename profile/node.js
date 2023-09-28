@@ -20,7 +20,7 @@ const node = {
 			},
 		},
 		{
-			files: ['**/*.ts?(x)'],
+			files: ['**/*.ts'],
 			parser: '@typescript-eslint/parser',
 			parserOptions: {
 				sourceType: 'module',
@@ -31,6 +31,36 @@ const node = {
 			plugins: ['simple-import-sort', 'import'],
 			extends: [
 				'standard-with-typescript',
+				'plugin:unicorn/recommended',
+				'prettier',
+			],
+			rules: {
+				// Allow most functions to rely on type inference. If the function is exported, then `@typescript-eslint/explicit-module-boundary-types` will ensure it's typed.
+				'@typescript-eslint/explicit-function-return-type': 'off',
+				'@typescript-eslint/no-use-before-define': [
+					'error',
+					{ functions: false, classes: true, variables: true, typedefs: true },
+				],
+			},
+		},
+		{
+			files: ['**/*.tsx'],
+			parser: '@typescript-eslint/parser',
+			parserOptions: {
+				sourceType: 'module',
+				allowAutomaticSingleRunInference: true,
+				warnOnUnsupportedTypeScriptVersion: false,
+				project: true,
+				ecmaFeatures: {
+					jsx: true,
+				},
+			},
+			plugins: ['simple-import-sort', 'import'],
+			extends: [
+				'standard-with-typescript',
+				'plugin:react/recommended',
+				'plugin:react-hooks/recommended',
+				'plugin:jsx-a11y/recommended',
 				'plugin:unicorn/recommended',
 				'prettier',
 			],
