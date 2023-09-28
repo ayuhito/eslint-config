@@ -71,6 +71,9 @@ const node = {
 					'error',
 					{ functions: false, classes: true, variables: true, typedefs: true },
 				],
+				// We don't need to import React in every file
+				'react/react-in-jsx-scope': false,
+				'react/jsx-uses-react': false,
 			},
 		},
 		{
